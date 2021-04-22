@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html>
+<!--Sean Gregor-->
+<!--
+    1. A good rule of thumb is making sure that the text size is relative to the size of the 
+
+
+-->
+
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Ptactice">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Sean Gregor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>MPLS Dogboarding </title>
         <style>
             body{
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
+            }
+            @media only screen and (max-width: 1024px) {
+                #flexcontainer{
+                    background-size: auto;
+                }
+                aside{
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width:768px) {
+                #flexcontainer{
+                    background-image: url(img/dog_bg_768.jpg);
+                    background-size: cover;
+                }
+                aside{
+                    background-color: #000000cf;
+                    background-position: center;
+                    color: white;
+                }
+                #location_button {
+                    display: block;
+                }
             }
             #container{
                 display: grid;
@@ -61,6 +96,12 @@
                 padding: 10px;
                 background-color: #ffffffcf;
                 border-radius: 10px;
+                transition: all .2s ease-in-out;
+            }
+            aside:hover{
+                background-color: #ff4500bd;
+                height: 325px;
+                color: white;
             }
             #copyright{
                 width: 275px;
@@ -94,11 +135,10 @@
                 <aside>
                     <h2>Price</h2>
                     <h3>Weekly Boarding</h3>
-                    <p>$425 - 7 days [24 hours from drop-off time] </li>
+                    <p>$425 - 7 days [24 hours from drop-off time] </p>
                     <h3>Daily Rate: </h3>
                     <p>$75 - 1 day [24 hours from drop-off time</p>
-                    
-                    </ul>
+                
                 </aside>
                 <aside>
                     <h2>Hours of Operation</h2>
