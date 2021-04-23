@@ -20,28 +20,6 @@
                 font-family: 'Montserrat', sans-serif;
                 margin: 0;
             }
-            @media only screen and (max-width: 1024px) {
-                #flexcontainer{
-                    background-size: auto;
-                }
-                aside{
-                    height: auto;
-                }
-            }
-            @media only screen and (max-width:768px) {
-                #flexcontainer{
-                    background-image: url(img/dog_bg_768.jpg);
-                    background-size: cover;
-                }
-                aside{
-                    background-color: #000000cf;
-                    background-position: center;
-                    color: white;
-                }
-                #location_button {
-                    display: block;
-                }
-            }
             #container{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
@@ -118,6 +96,28 @@
                 height: 120px;
                 border-radius: 10px;
                 background-color: #000000dc;
+            }
+            @media only screen and (max-width: 1024px) {
+                #flexcontainer{
+                    background-size: auto;
+                }
+                aside{
+                    height: auto;
+                }
+            }
+            @media only screen and (max-width: 768px) {
+                #flexcontainer{
+                    background-image: url(img/dog_bg_768.jpg);
+                    background-size: cover;
+                }
+                aside{
+                    background-color: #000000cf;
+                    background-position: center;
+                    color: white;
+                }
+                #location_button {
+                    display: block;
+                }
             }
         </style>
     </head>
